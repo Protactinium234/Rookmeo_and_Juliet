@@ -1,3 +1,4 @@
+import os
 import chess
 import random
 import string
