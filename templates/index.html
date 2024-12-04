@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Chess Multiplayer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Rookmeo and Juliet Chess</h1>
+    <div id="game-setup">
+        <button id="create-game">Create Game</button>
+        <input type="text" id="join-game-code" placeholder="Enter game code">
+        <button id="join-game">Join Game</button>
+        <p id="game-info"></p>
+    </div>
+    <div id="chessboard"></div>
+
+    <!-- Load Socket.IO -->
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" defer></script>
+
+    <!-- Load Board Logic -->
+    <script src="/static/scripts/board.js" defer></script>
+
+    <!-- Load Game Logic -->
+    <script src="/static/scripts/game.js" defer></script>
+</body>
+</html>
