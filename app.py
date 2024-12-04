@@ -166,4 +166,4 @@ def legal_moves(data):
 # Main entry point
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))  # Use PORT from the environment or default to 5000
-    socketio.run(app, host='127.0.0.1', port=port, debug=True)
+    socketio.run(app, host='0.0.0.0', port=port, debug=True)
